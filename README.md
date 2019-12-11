@@ -2,5 +2,4 @@
 
 ### projects
 
-
-* [sweater] (https://github.com/alexey-taranov/learning_spring/tree/master/sweater)
+* [sweater](https://github.com/alexey-taranov/learning_spring/tree/master/sweater)
