@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>sweater</module>
+        <module>tasks_for_learning</module>
     </modules>
 
     <parent>
