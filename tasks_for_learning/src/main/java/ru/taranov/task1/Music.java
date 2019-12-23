@@ -1,5 +1,7 @@
 package ru.taranov.task1;
 
+import java.util.List;
+
 public interface Music {
-    String getSong();
+    List<String> getSong();
 }

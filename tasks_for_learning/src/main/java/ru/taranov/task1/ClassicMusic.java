@@ -1,16 +1,23 @@
 package ru.taranov.task1;
 
+import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Component
 public class ClassicMusic implements Music {
 
-    private ClassicMusic() {
-    }
+    private List<String> classicSongs = new ArrayList<>();
 
-    public static ClassicMusic getClassicMusic() {
-        return new ClassicMusic();
+    {
+        classicSongs.add("Hungarian Rhapsody");
+        classicSongs.add("Symphony no. 5 in C Minor, op. 67");
+        classicSongs.add("Night on Bald Mountain");
     }
 
     @Override
-    public String getSong() {
-        return "Hungarian Rhapsody";
+    public List<String> getSong() {
+        return classicSongs;
     }
 }

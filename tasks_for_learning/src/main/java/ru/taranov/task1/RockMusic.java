@@ -1,16 +1,23 @@
 package ru.taranov.task1;
 
+import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Component
 public class RockMusic implements Music {
+
+    private List<String> rockSongs = new ArrayList<>();
+
+    {
+        rockSongs.add("Wind cries Mary");
+        rockSongs.add("Paint it black");
+        rockSongs.add("Can't seem to make you mine");
+    }
+
     @Override
-    public String getSong() {
-        return "Wind cries Mary";
-    }
-
-    void doInit() {
-        System.out.println("init rock");
-    }
-
-    void doDestroy() {
-        System.out.println("destroy rock");
+    public List<String> getSong() {
+        return rockSongs;
     }
 }
