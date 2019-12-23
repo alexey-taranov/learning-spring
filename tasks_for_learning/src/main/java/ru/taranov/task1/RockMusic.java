@@ -5,4 +5,12 @@ public class RockMusic implements Music {
     public String getSong() {
         return "Wind cries Mary";
     }
+
+    void doInit() {
+        System.out.println("init rock");
+    }
+
+    void doDestroy() {
+        System.out.println("destroy rock");
+    }
 }
